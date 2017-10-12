@@ -1,9 +1,10 @@
 git pull origin master
 git add .
-if $1
+if test $# -eq 0
 then
-git commit -m "$1"
+  name=`git config user.name`
+  git commit -m "update by $name "
 else
-git commit -m "update by "
+  git commit -m "$1"
 fi
 git push origin master
