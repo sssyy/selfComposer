@@ -7,7 +7,7 @@ $socket = socket_create( AF_INET, SOCK_DGRAM, SOL_UDP );
 if ( $socket === false ) {
     echo "socket_create() failed:reason:" . socket_strerror( socket_last_error() ) . "\n";
 }
-$ok = socket_bind( $socket, '202.85.218.133', 11109 );
+$ok = socket_bind( $socket, '10.237.72.41', 11109 );
 if ( $ok === false ) {
     echo "socket_bind() failed:reason:" . socket_strerror( socket_last_error( $socket ) );
 }
