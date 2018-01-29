@@ -9,3 +9,5 @@
 - [SWFUpload ](http://www.runoob.com/w3cnote/swfupload-guide.html) 无刷新上传文件
 
 - [bootstrap-datetimepicker](http://www.bootcss.com/p/bootstrap-datetimepicker/) bootstrap 时间选择器
+
+- [bootstrap-table](http://bootstrap-table.wenzhixin.net.cn/) bootstrap 表格
