@@ -6,3 +6,5 @@ git config core.filemode false  git  忽略文件权限
 ssh-copy-id user@root
 
 将本地公钥复制到服务器端，实现无密码登录
+
+tail -f xxx.log | perl -pe 's/(NOTICE)/\e[1;31m$1\e[0m/g'  
