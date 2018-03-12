@@ -51,12 +51,15 @@ function create_guid_section($characters){
     return $return;
 }
 
-function write2file()
+function write2file($platform)
 {
-    $keyFile = fopen(PATH,'w') or die('Unable to open file!');
+    $keyFile = fopen(PATH,'a+') or die('Unable to open file!');
 
-    $key = date('Y-m-d H:i:s') . strtoupper(create_guid());
+    $key = '--------------------' .  "\r\n" .
+        $platform . date('Y-m-d H:i:s') .  "\r\n" .
+        'vendor_key:' . strtoupper(create_guid()) . "\r\n" .
+        'secret_key:' . strtoupper(create_guid()) . "\r\n";
     fwrite($keyFile, $key);
     fclose($keyFile);
 }
-
+write2file('****');
